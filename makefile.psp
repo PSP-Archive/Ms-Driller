@@ -1,0 +1,21 @@
+TARGET = drill
+OBJS = drill.o CBmps.o Cffont.o CTime.o CWavs.o CInput.o
+
+INCDIR = 
+CFLAGS = -O2 -G0 -Wall
+CXXFLAGS = $(CFLAGS) -fno-exceptions -fno-rtti
+ASFLAGS = $(CFLAGS)
+
+LIBDIR =
+LDFLAGS =
+
+EXTRA_TARGETS = EBOOT.PBP
+PSP_EBOOT_TITLE = MS Driller
+
+PSPSDK=$(shell psp-config --pspsdk-path)
+PSPBIN = $(PSPSDK)/../bin
+CFLAGS += $(shell $(PSPBIN)/sdl-config --cflags)
+LIBS = -lSDL_mixer
+LIBS += $(shell $(PSPBIN)/sdl-config --libs)
+
+include $(PSPSDK)/lib/build.mak

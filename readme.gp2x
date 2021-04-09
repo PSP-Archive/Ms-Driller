@@ -1,0 +1,50 @@
+					
+__History:
+
+						10/02/2007 
+v0.1 Final? 
+Volume selection with VolDown/VolUp. Graphics improvement.
+
+
+						05/01/2007 
+v0.05
+The cpu is undercloked. Fixed the highsores' system. The game can pause when pushing start. 
+
+						03/01/2007 
+v0.04
+The sound works without any delay, graphics and sounds improved, controls changed and highscores fixed.
+
+						12/27/2005 
+v0.03
+THe sound now works, although the delay between action and sound is long.
+
+						12/27/2005 
+v0.02
+New font, characters are legible now, also, data files removed from src directory
+
+						12/27/2005 
+v0.01
+first port, no sound, bad font.. but runs well
+
+
+__Me Talking:
+This is a port of miss driller (a mr. driller clone) to the gp2x
+Previously there was no sound, that's been fixed. 
+TODO:
+	Add a quit button to quit without having to game over first
+	make it faster
+	swap out SDL for ryleh's minimal library  (distant future)
+
+__Run/Compile:
+to run it copy drilllaunch.gpe and the drill2x folder to the root of your SD, or 
+if you want to build the source, be sure to check the paths in the Makefile.gp2x
+
+__Controls: 
+use A and Y in the menu, and for the high score area, A enters letters, X deletes letters, Y exits to main menu
+
+	~kfazz   (kfazzone@snet.net)
+	+birslip (http://birslip.pizz.biz/)
+	+edd
+
+PS: get the original source here: (no I can't read it either)
+http://www.geocities.co.jp/Berkeley/2093/driller.html
